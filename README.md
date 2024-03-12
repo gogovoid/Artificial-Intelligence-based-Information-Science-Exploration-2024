@@ -1,0 +1,1 @@
+This is a remote repository for the “Artificial Intelligence-based Information Science Exploration” class held at Incheon Science High School in the first semester of the 2024 school year. In this repository, we upload and manage program code and practice examples studied in class.
