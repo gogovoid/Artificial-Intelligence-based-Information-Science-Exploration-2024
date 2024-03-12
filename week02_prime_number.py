@@ -6,7 +6,7 @@ if number < 2:
 else:
     #for i in range(2, number):
     i = 2
-    while i < number:  # for to while
+    while i*i < number:  # reduce loop operation
         if number % i == 0:
             #is_prime_number = is_prime_number + 1
             is_prime_number = False  # Remove the plus operation
