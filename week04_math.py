@@ -15,6 +15,20 @@ def print_fx(fx):
     return texts
 
 
+def calculate_fx(fx, x):
+    expo = len(fx) - 1
+    result = 0
+
+    for k in range(len(fx)):
+        coef = fx[k]
+        result = result + coef * x ** expo
+        expo = expo - 1
+
+    return result
+
+
 coefficient = [5, -2, 0, 6]
 
 print(print_fx(coefficient))
+x = int(input("Input x value : "))
+print(calculate_fx(coefficient, x))
