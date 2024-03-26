@@ -6,7 +6,7 @@ def power(b, e) -> int:
     :return: power result value
     """
     result = 1
-    for i in range(e):
+    for _ in range(e):
         result = result * b
     return result
 
