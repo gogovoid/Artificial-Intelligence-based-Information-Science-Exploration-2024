@@ -1,3 +1,4 @@
+print(31.97e-3)
 char = input()
 print(ord(char))
 print(0b1010, 0xa, 0o12)
