@@ -10,6 +10,8 @@ while True:
         print("Exit program..")
         break
     elif menu == 1:
-        print("You ordered Americano coffee. The price is 1500 won.")
+        print("You ordered americano coffee. The price is 1500 won.")
     elif menu == 2:
         print("You ordered a cafe latte. The price is 2500 won.")
+    else:
+        print(f"Menu number {menu} you ordered does not exist. Please choose from the menu.")
