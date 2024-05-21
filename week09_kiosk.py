@@ -7,9 +7,9 @@ def select_menu(key):
     :return: None
     """
     global total_price
-    print(f"You ordered {key}. The price is {beverage_price_quantity[key][0]} won.")
-    total_price = total_price + beverage_price_quantity[key][0]
-    beverage_price_quantity[key][1] = beverage_price_quantity[key][1] + 1
+    print(f"You ordered {key}. The price is {beverage_price_quantity.get(key)[0]} won.")
+    total_price = total_price + beverage_price_quantity.get(key)[0]
+    beverage_price_quantity.get(key)[1] = beverage_price_quantity.get(key)[1] + 1
 
 
 beverage_price_quantity = {
