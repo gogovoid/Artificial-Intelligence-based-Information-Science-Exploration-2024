@@ -12,27 +12,20 @@ def select_menu(index):
     quantity[index] = quantity[index] + 1
 
 
-# beverage = ["americano coffee", "caffe latte", "iced tea"]
-# prices = [1500, 2500, 2300]
-
-# beverage_price = dict(americano_coffee=1500, caffe_latte=2500, iced_tea=2300)
-
-# beverage_price = {"americano coffee": 1500, "caffe latte": 2500, "iced tea": 2300}
-# quantity = [0, 0, 0]
-
-beverage_price = {
+beverage_price_quantity = {
     "americano coffee": [1500, 0],  # key: [price, quantity]
     "caffe latte": [2500, 0],
     "iced tea": [2300, 0]
 }
-#quantity = [0, 0, 0]
-
 total_price = 0
 
 menu_lists = ''
-for m in range(len(beverage)):
-    menu_lists = menu_lists + f"{m+1}) {beverage[m]} {prices[m]}won  "
-menu_lists = menu_lists + f"{len(beverage)+1}) End order : "
+#for m in range(len(beverage)):
+i = 1
+for k, v in beverage_price_quantity.items():
+    menu_lists = menu_lists + f"{i}) {k} {v[0]}won  "
+    i = i + 1
+menu_lists = menu_lists + f"{i}) End order : "
 
 while True:
     menu = input(menu_lists)
