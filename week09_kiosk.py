@@ -41,10 +41,9 @@ while True:
     else:
         print(f"Menu number {menu} you ordered does not exist. Please choose from the menu.")
 
-#for i in range(len(beverage)):
+
 for key, value in beverage_price_quantity.items():
-    #if quantity[i] != 0:
-    if beverage_price_quantity[key][1] != 0:
-        print(f"{key}\n\t{beverage_price_quantity[key][0]}\tx{beverage_price_quantity[key][1]}\t{beverage_price_quantity[key][0] * beverage_price_quantity[key][1]}")
+    if value[1] != 0:
+        print(f"{key}\n\t{value[0]}\tx{value[1]}\t{value[0] * value[1]}")
 
 print(f"The total amount is {total_price} won.")
