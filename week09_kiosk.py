@@ -17,8 +17,15 @@ def select_menu(index):
 
 # beverage_price = dict(americano_coffee=1500, caffe_latte=2500, iced_tea=2300)
 
-beverage_price = {"americano coffee": 1500, "caffe latte": 2500, "iced tea": 2300}
-quantity = [0, 0, 0]
+# beverage_price = {"americano coffee": 1500, "caffe latte": 2500, "iced tea": 2300}
+# quantity = [0, 0, 0]
+
+beverage_price = {
+    "americano coffee": [1500, 0],  # key: [price, quantity]
+    "caffe latte": [2500, 0],
+    "iced tea": [2300, 0]
+}
+#quantity = [0, 0, 0]
 
 total_price = 0
 
